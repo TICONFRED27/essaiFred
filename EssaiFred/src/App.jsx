@@ -1,7 +1,13 @@
 import MyTitle from "./assets/components/MyTitle";
 import Fred from "./assets/components/Fred";
 import SayHello from "./assets/components/SayHello";
+import PropTypes from "prop-types";
 import "./App.css";
+
+SayHello.propTypes = {
+  name: PropTypes.string.isRequired,
+  age: PropTypes.number.isRequired,
+};
 
 function App() {
   const msg = "coucou";
